@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/flex.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/product-card.css">
+    <link rel="stylesheet" href="/css/arrow.css">
+    <style>
+        * {--section-gap: 25px}
+        ul{
+            padding: 0;
+            margin: 0;
+        }
+
+        li{
+            list-style: none;
+        }
+
+        h1{
+            font-size: 36px
+        }
+
+        .fill-color-block {
+            width: 100%;
+            height: 80px;
+            background-color: #FFF2DB;
+        }
+
+        .mini-banner img {
+            vertical-align: top;
+            width: 100%;
+        }
+
+        .preorder-list {
+            background-color: #FFF2DB;
+        }
+
+        .path-group {
+            display: flex;
+            gap: var(--section-gap);
+            margin: var(--section-gap) 0;
+            align-items: center;
+        }
+
+        .path-text {
+            display: flex;
+            font-size: 18px;
+            gap: 30px;
+        }
+
+        .preorder-list-heading{
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            gap: var(--section-gap);
+            border-bottom: 1px solid #6e6e6e;
+        }
+
+        .sidebar {
+            margin-right: 10%;
+            height: 100%;
+            border-right: 1px solid #6e6e6e;
+        }
+
+        [class*="preorder-filter-"] {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: normal;
+        }
+
+        .list-row {
+            row-gap: 80px;
+            align-items: center;
+        }
+
+        .preorder-card{
+            display: flex;
+        }
+        
+
+        .pagination {
+            display: flex;
+            font-size: 18px;
+            justify-content: center;
+            padding: var(--section-gap) 0;
+        }
+
+        .page-item {
+            border: 1px solid #000;
+            background-color: #E5BB7A;
+            text-align: center;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin: 0 2px 0 2px;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav_bar">
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-2">
+                        <a href=""><img src="/imgs/GC_ver1.2_png.png"></a>
+                    </div>
+                    <div class="col-xl-1">
+                        <a href="">最新消息</a>
+                    </div>
+                    <div class="col-xl-1">
+                        <a href="">商品列表</a>
+                    </div>
+                    <div class="col-xl-1">
+                        <a href="">預約商品</a>
+                    </div>
+                    <div class="col-xl-4">
+                        <input type="text" placeholder="請輸入搜尋內容">
+                        <a href=""><img src="/imgs/search.png" style="width: 50px;"></a>
+                    </div>
+                    <div class="col-xl-1">
+                        <a href="">會員登入</a>
+                    </div>
+                    <div class="col-xl-1">
+                        <a href="">
+                            <img src="/imgs/cart.png" style="width: 50px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <div class="fill-color-block"></div>
+        <div class="mini-banner">
+            <img src="/imgs/SEED-FREEDOM(1).jpg" alt="">
+        </div>
+        <div class="preorder-list">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="path-group">
+                            <div class="arrow-rtl"></div>
+                            <div class="path-text">
+                                <div class="path-index">首頁</div>
+                                <div class="path-slash">/</div>
+                                <div class="path-text-A">預約商品</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="preorder-list-heading">
+                            <h1>預約商品</h1>
+                            <div class="arrow-ltr"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="sidebar">
+                            <ul>
+                                <li>
+                                    <div class="preorder-filter-disc">
+                                        <h2>遊戲光碟</h2>
+                                        <div class="arrow-ltr"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-9">
+                        <div class="filted-list">
+                            <div class="row list-row">
+                                <div class="preorder-card">
+                                    <div class="col-xl-4">
+                                        <div class="product-card">
+                                            <a href="">
+                                                <div class="img"><img src="/imgs/Elden-Ring.jpg"></div>
+                                                <div class="product-info">
+                                                    <div class="title">PS5 艾爾登法環</div>
+                                                    <div class="product-text">
+                                                        <div class="list-price">售價</div>
+                                                        <div class="sale-price">1790元</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-8">
+                                        <div class="preoder-video">
+                                            <h3>遊戲名稱</h3>
+                                            <iframe width="100%" height="400px" src="https://www.youtube.com/embed/GJ4yehnerHQ?si=6JLg5f4afdi2J85G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="pagination">
+                            <nav>
+                                <ul class="pagination">
+                                  <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                      <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                  </li>
+                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                      <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </nav>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3">
+                    <img src="/imgs/GC_ver1.2_png.png">
+                </div>
+                <div class="col-xl-5">
+                    <div class="information">
+                        <h2 class="info-title">門市資訊</h2>
+                        <div class="info-adress">
+                            <h2>地址:</h2>
+                            <p>桃園市花貓區虎斑貓路86號</p>
+                        </div>
+                        <div class="info-phone">
+                            <h2>電話:</h2>
+                            <p>03-0000-0000</p>
+                        </div>
+                        <div class="info-business-hours">
+                            <h2>營業時間:</h2>
+                            <p>每日12:00~22:00<br>公休日與夜排日另行於最新消息與臉書、IG公告</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <div class="social-links">
+                        <h2 class="links-title">關注我們</h2>
+                        <nav style="margin-top: 50px;">
+                            <a href=""><img src="/imgs/FB ICON.png"></a>
+                            <a href=""><img src="/imgs/instagram.png"></a>
+                            <a href=""><img src="/imgs/line.png"></a>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

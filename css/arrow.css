@@ -1,0 +1,20 @@
+.arrow-rtl {
+    border: #6e6e6e solid;
+    border-width: 4px 0 0 4px ;
+    width: 0;
+    height: 0;
+    padding: 7px;
+    transform: rotate(-45deg);
+    display: inline-block;
+}
+
+.arrow-ltr {
+    border: #6e6e6e solid;
+    border-width: 0 4px 4px 0;
+    width: 0;
+    height: 0;
+    padding: 7px;
+    transform: rotate(-45deg);
+    display: inline-block;
+}
+

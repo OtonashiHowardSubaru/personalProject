@@ -5,12 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/Projects/personalProject/css/normalize.css">
-    <link rel="stylesheet" href="/Projects/personalProject/css/flex.css">
-    <link rel="stylesheet" href="/Projects/personalProject/css/header.css">
-    <link rel="stylesheet" href="/Projects/personalProject/css/footer.css">
-    <link rel="stylesheet" href="/Projects/personalProject/css/product-card.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/flex.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/product-card.css">
+    <link rel="stylesheet" href="/css/arrow.css">
     <style>
+        * {--section-gap: 25px}
+        ul{
+            padding: 0;
+            margin: 0;
+        }
+
+        li{
+            list-style: none;
+        }
+
+        h1{
+            font-size: 36px
+        }
+
+
         .fill-color-block {
             width: 100%;
             height: 80px;
@@ -21,6 +37,67 @@
             vertical-align: top;
             width: 100%;
         }
+
+        .product-list {
+            background-color: #FFF2DB;
+        }
+
+        .path-group {
+            display: flex;
+            gap: var(--section-gap);
+            margin: var(--section-gap) 0;
+            align-items: center;
+        }
+
+        .path-text {
+            display: flex;
+            font-size: 18px;
+            gap: 30px;
+        }
+
+        .product-list-heading{
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            gap: var(--section-gap);
+            border-bottom: 1px solid #6e6e6e;
+        }
+
+        .sidebar {
+            margin-right: 10%;
+            height: 100%;
+            border-right: 1px solid #6e6e6e;
+        }
+
+        [class*="product-filter-"] {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: normal;
+        }
+
+        .list-row {
+            row-gap: 80px;
+        }        
+
+        .pagination {
+            display: flex;
+            font-size: 18px;
+            justify-content: center;
+            padding: var(--section-gap) 0;
+        }
+
+        .page-item {
+            border: 1px solid #000;
+            background-color: #E5BB7A;
+            text-align: center;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin: 0 2px 0 2px;
+        }
+        a {
+            text-decoration: none;
+        }
     </style>
 </head>
 
@@ -30,7 +107,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-2">
-                        <a href=""><img src="/Projects/personalProject/imgs/GC_ver1.2_png.png"></a>
+                        <a href=""><img src="/imgs/GC_ver1.2_png.png"></a>
                     </div>
                     <div class="col-xl-1">
                         <a href="">最新消息</a>
@@ -43,14 +120,14 @@
                     </div>
                     <div class="col-xl-4">
                         <input type="text" placeholder="請輸入搜尋內容">
-                        <a href=""><img src="/Projects/personalProject/imgs/search.png" style="width: 50px;"></a>
+                        <a href=""><img src="/imgs/search.png" style="width: 50px;"></a>
                     </div>
                     <div class="col-xl-1">
                         <a href="">會員登入</a>
                     </div>
                     <div class="col-xl-1">
                         <a href="">
-                            <img src="/Projects/personalProject/imgs/cart.png" style="width: 50px;">
+                            <img src="/imgs/cart.png" style="width: 50px;">
                         </a>
                     </div>
                 </div>
@@ -60,152 +137,196 @@
     <main>
         <div class="fill-color-block"></div>
         <div class="mini-banner">
-            <img src="/Projects/personalProject/imgs/SEED-FREEDOM(1).jpg" alt="">
+            <img src="/imgs/SEED-FREEDOM(1).jpg" alt="">
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="path-group">
-                        <div class="arrow">測試測試</div>
-                        <div class="path">測試測試</div>
+        <div class="product-list">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="path-group">
+                            <div class="arrow-rtl"></div>
+                            <div class="path-text">
+                                <div class="path-index">首頁</div>
+                                <div class="path-slash">/</div>
+                                <div class="path-text-A">所有商品</div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xl-3">
-                    <div class="sidebar">
-                        
+                    <div class="col-xl-12">
+                        <div class="product-list-heading">
+                            <h1>所有商品</h1>
+                            <div class="arrow-ltr"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xl-9">
-                    <div class="product-list">
-                        <div class="row list-row">
-                            <div class="col-xl-4">
-                                <div class="product-card">
-                                    <a href="">
-                                        <div class="img"><img src="/Projects/personalProject/imgs/Elden-Ring.jpg"></div>
-                                        <div class="product-info">
-                                            <div class="title">PS5 艾爾登法環</div>
-                                            <div class="product-text">
-                                                <div class="list-price">售價</div>
-                                                <div class="sale-price">1790元</div>
+                    <div class="col-xl-3">
+                        <div class="sidebar">
+                            <ul>
+                                <li>
+                                    <div class="product-filter-PS">
+                                        <h2>Play Station</h2>
+                                        <div class="arrow-ltr"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-filter-NS">
+                                        <h2>Nintendo Switch</h2>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-9">
+                        <div class="filted-list">
+                            <div class="row list-row">
+                                <div class="col-xl-4">
+                                    <div class="product-card">
+                                        <a href="">
+                                            <div class="img"><img src="/imgs/Elden-Ring.jpg"></div>
+                                            <div class="product-info">
+                                                <div class="title">PS5 艾爾登法環</div>
+                                                <div class="product-text">
+                                                    <div class="list-price">售價</div>
+                                                    <div class="sale-price">1790元</div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-xl-4">
-                                <div class="product-card">
-                                    <a href="">
-                                        <div class="img"><img src="/Projects/personalProject/imgs/Elden-Ring.jpg"></div>
-                                        <div class="product-info">
-                                            <div class="title">PS5 艾爾登法環</div>
-                                            <div class="product-text">
-                                                <div class="list-price">售價</div>
-                                                <div class="sale-price">1790元</div>
+                                <div class="col-xl-4">
+                                    <div class="product-card">
+                                        <a href="">
+                                            <div class="img"><img src="/imgs/Elden-Ring.jpg"></div>
+                                            <div class="product-info">
+                                                <div class="title">PS5 艾爾登法環</div>
+                                                <div class="product-text">
+                                                    <div class="list-price">售價</div>
+                                                    <div class="sale-price">1790元</div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-xl-4">
-                                <div class="product-card">
-                                    <a href="">
-                                        <div class="img"><img src="/Projects/personalProject/imgs/Elden-Ring.jpg"></div>
-                                        <div class="product-info">
-                                            <div class="title">PS5 艾爾登法環</div>
-                                            <div class="product-text">
-                                                <div class="list-price">售價</div>
-                                                <div class="sale-price">1790元</div>
+                                <div class="col-xl-4">
+                                    <div class="product-card">
+                                        <a href="">
+                                            <div class="img"><img src="/imgs/Elden-Ring.jpg"></div>
+                                            <div class="product-info">
+                                                <div class="title">PS5 艾爾登法環</div>
+                                                <div class="product-text">
+                                                    <div class="list-price">售價</div>
+                                                    <div class="sale-price">1790元</div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-xl-4">
-                                <div class="product-card">
-                                    <a href="">
-                                        <div class="img"><img src="/Projects/personalProject/imgs/Elden-Ring.jpg"></div>
-                                        <div class="product-info">
-                                            <div class="title">PS5 艾爾登法環</div>
-                                            <div class="product-text">
-                                                <div class="list-price">售價</div>
-                                                <div class="sale-price">1790元</div>
+                                <div class="col-xl-4">
+                                    <div class="product-card">
+                                        <a href="">
+                                            <div class="img"><img src="/imgs/Elden-Ring.jpg"></div>
+                                            <div class="product-info">
+                                                <div class="title">PS5 艾爾登法環</div>
+                                                <div class="product-text">
+                                                    <div class="list-price">售價</div>
+                                                    <div class="sale-price">1790元</div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-xl-4">
-                                <div class="product-card">
-                                    <a href="">
-                                        <div class="img"><img src="/Projects/personalProject/imgs/Elden-Ring.jpg"></div>
-                                        <div class="product-info">
-                                            <div class="title">PS5 艾爾登法環</div>
-                                            <div class="product-text">
-                                                <div class="list-price">售價</div>
-                                                <div class="sale-price">1790元</div>
+                                <div class="col-xl-4">
+                                    <div class="product-card">
+                                        <a href="">
+                                            <div class="img"><img src="/imgs/Elden-Ring.jpg"></div>
+                                            <div class="product-info">
+                                                <div class="title">PS5 艾爾登法環</div>
+                                                <div class="product-text">
+                                                    <div class="list-price">售價</div>
+                                                    <div class="sale-price">1790元</div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-xl-4">
-                                <div class="product-card">
-                                    <a href="">
-                                        <div class="img"><img src="/Projects/personalProject/imgs/Elden-Ring.jpg"></div>
-                                        <div class="product-info">
-                                            <div class="title">PS5 艾爾登法環</div>
-                                            <div class="product-text">
-                                                <div class="list-price">售價</div>
-                                                <div class="sale-price">1790元</div>
+                                <div class="col-xl-4">
+                                    <div class="product-card">
+                                        <a href="">
+                                            <div class="img"><img src="/imgs/Elden-Ring.jpg"></div>
+                                            <div class="product-info">
+                                                <div class="title">PS5 艾爾登法環</div>
+                                                <div class="product-text">
+                                                    <div class="list-price">售價</div>
+                                                    <div class="sale-price">1790元</div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-xl-4">
-                                <div class="product-card">
-                                    <a href="">
-                                        <div class="img"><img src="/Projects/personalProject/imgs/Elden-Ring.jpg"></div>
-                                        <div class="product-info">
-                                            <div class="title">PS5 艾爾登法環</div>
-                                            <div class="product-text">
-                                                <div class="list-price">售價</div>
-                                                <div class="sale-price">1790元</div>
+                                <div class="col-xl-4">
+                                    <div class="product-card">
+                                        <a href="">
+                                            <div class="img"><img src="/imgs/Elden-Ring.jpg"></div>
+                                            <div class="product-info">
+                                                <div class="title">PS5 艾爾登法環</div>
+                                                <div class="product-text">
+                                                    <div class="list-price">售價</div>
+                                                    <div class="sale-price">1790元</div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-xl-4">
-                                <div class="product-card">
-                                    <a href="">
-                                        <div class="img"><img src="/Projects/personalProject/imgs/Elden-Ring.jpg"></div>
-                                        <div class="product-info">
-                                            <div class="title">PS5 艾爾登法環</div>
-                                            <div class="product-text">
-                                                <div class="list-price">售價</div>
-                                                <div class="sale-price">1790元</div>
+                                <div class="col-xl-4">
+                                    <div class="product-card">
+                                        <a href="">
+                                            <div class="img"><img src="/imgs/Elden-Ring.jpg"></div>
+                                            <div class="product-info">
+                                                <div class="title">PS5 艾爾登法環</div>
+                                                <div class="product-text">
+                                                    <div class="list-price">售價</div>
+                                                    <div class="sale-price">1790元</div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-xl-4">
-                                <div class="product-card">
-                                    <a href="">
-                                        <div class="img"><img src="/Projects/personalProject/imgs/Elden-Ring.jpg"></div>
-                                        <div class="product-info">
-                                            <div class="title">PS5 艾爾登法環</div>
-                                            <div class="product-text">
-                                                <div class="list-price">售價</div>
-                                                <div class="sale-price">1790元</div>
+                                <div class="col-xl-4">
+                                    <div class="product-card">
+                                        <a href="">
+                                            <div class="img"><img src="/imgs/Elden-Ring.jpg"></div>
+                                            <div class="product-info">
+                                                <div class="title">PS5 艾爾登法環</div>
+                                                <div class="product-text">
+                                                    <div class="list-price">售價</div>
+                                                    <div class="sale-price">1790元</div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-xl-12">
+                        <div class="pagination">
+                            <nav>
+                                <ul class="pagination">
+                                  <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                      <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                  </li>
+                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                      <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </nav>
+                        </div>
                 </div>
             </div>
         </div>
@@ -214,7 +335,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-3">
-                    <img src="/Projects/personalProject/imgs/GC_ver1.2_png.png">
+                    <img src="/imgs/GC_ver1.2_png.png">
                 </div>
                 <div class="col-xl-5">
                     <div class="information">
@@ -238,9 +359,9 @@
                     <div class="social-links">
                         <h2 class="links-title">關注我們</h2>
                         <nav style="margin-top: 50px;">
-                            <a href=""><img src="/Projects/personalProject/imgs/FB ICON.png"></a>
-                            <a href=""><img src="/Projects/personalProject/imgs/instagram.png"></a>
-                            <a href=""><img src="/Projects/personalProject/imgs/line.png"></a>
+                            <a href=""><img src="/imgs/FB ICON.png"></a>
+                            <a href=""><img src="/imgs/instagram.png"></a>
+                            <a href=""><img src="/imgs/line.png"></a>
                         </nav>
                     </div>
                 </div>
