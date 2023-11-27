@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Projects/personalProject/css/normalize.css">
+    <link rel="stylesheet" href="/Projects/personalProject/css/flex.css">
+    <link rel="stylesheet" href="/Projects/personalProject/css/header.css">
+    <link rel="stylesheet" href="/Projects/personalProject/css/footer.css">
+    <link rel="stylesheet" href="/Projects/personalProject/css/banner.css">
+    <link rel="stylesheet" href="/Projects/personalProject/css/product-card.css">
+    <style>
+        * {--section-gap: 25px}
+
+        [class*="-heading"] {
+            font-size: 36px;
+            letter-spacing: 0.5em;
+            text-align: center;
+            position: relative;
+            padding: 25px;
+            border-bottom: 20px solid #E88847;
+            margin-bottom: 50px;
+        }
+
+        [class*="-heading"]>h2 {
+            margin: 0;
+        }
+
+        .read-more {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin-top: var(--section-gap);
+        }
+
+        .btn-read-more {
+            box-sizing: border-box;
+            border: 1px solid #6e6e6e;
+            border-radius: 10px;
+            font: 18px "Inter-Regular", sans-serif;
+            padding: 18px 40px;
+            background-color: #fff0;
+        }
+
+        .btn-read-more:hover {
+            border-color: #6247E8;
+            color: #6247E8;
+            box-shadow: 3px 3px 4px 0 #1F0699;
+        }
+
+        .new-products {
+            background-color: #FFF2DB;
+            padding-top: var(--section-gap);
+            padding-bottom: var(--section-gap);
+        }
+
+        .hot-preorder {
+            background-color: #FFF2DB;
+            padding-top: var(--section-gap);
+            padding-bottom: var(--section-gap);
+        }
+
+        .news {
+            background: linear-gradient(180deg,
+                    rgba(255, 242, 219, 1) 0%,
+                    rgba(217, 217, 217, 0) 100%);
+            padding-top: var(--section-gap);
+            padding-bottom: var(--section-gap);
+        }
+
+        .news-item-img img {
+            width: 100%;
+            vertical-align: top;
+            height: 56.25%;
+            margin-bottom: var(--section-gap);
+        }
+
+        .news-item-text {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 100%;
+            padding-bottom: var(--section-gap);
+        }
+
+        .news-item-title {
+            font: 32px "Inter-Regular", sans-serif;
+            letter-spacing: 3px;
+            margin: auto;
+        }
+
+        .news-item-title h3 {
+            margin: 0;
+        }
+
+        .news-item-date {
+            align-self: flex-end;
+        }
+
+        .story {
+            background: linear-gradient(
+                0deg,
+                rgba(200, 103, 54, 1) 0%,
+                rgba(189, 73, 14, 0) 100%
+                );
+            padding-bottom: 200px;
+        }
+
+        .story .story-img img {
+            width: 100%;
+            vertical-align: top;
+        }
+
+        .decoration-box {
+            display: flex;
+            justify-content: center;
+        }
+
+        .decoration-wire {
+            width: 0;
+            border: 1px solid #6e6e6e;
+            height: 100%;
+        }
+
+        .story-text h3 {
+            font-size: 32px;
+        }
+
+        .story-tex p {
+            font-size: 18px;
+        }
+
+        footer {
+            background-color: #C86736;
+
+            padding-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav_bar">
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-2">
+                        <a href=""><img src="/Projects/personalProject/imgs/GC_ver1.2_png.png"></a>
+                    </div>
+                    <div class="col-xl-1">
+                        <a href="">最新消息</a>
+                    </div>
+                    <div class="col-xl-1">
+                        <a href="">商品列表</a>
+                    </div>
+                    <div class="col-xl-1">
+                        <a href="">預約商品</a>
+                    </div>
+                    <div class="col-xl-4">
+                        <input type="text" placeholder="請輸入搜尋內容">
+                        <a href=""><img src="/Projects/personalProject/imgs/search.png" style="width: 50px;"></a>
+                    </div>
+                    <div class="col-xl-1">
+                        <a href="">會員登入</a>
+                    </div>
+                    <div class="col-xl-1">
+                        <a href="">
+                            <img src="/Projects/personalProject/imgs/cart.png" style="width: 50px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <div class="banner">
+            <div class="slogan">
+                <div class="slogan-partA">Gaming</div>
+                <div class="slogan-partB">Like</div>
+                <div class="slogan-partC">
+                    <span class="calico-span1">Ca</span>
+                    <span class="calico-span2">li</span>
+                    <span class="calico-span3">co</span>
+                </div>
+            </div>
+        </div>
+        <div class="new-products">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="new-products-heading">
+                            <h2>最新商品</h2>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 ">
+                        <div class="product-card">
+                            <a href="">
+                                <div class="img"><img src="/Projects/personalProject/imgs/Elden-Ring.jpg"></div>
+                                <div class="product-info">
+                                    <div class="title">PS5 艾爾登法環</div>
+                                    <div class="product-text">
+                                        <div class="list-price">售價</div>
+                                        <div class="sale-price">1790元</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 ">
+                        <div class="product-card">
+                            <a href="">
+                                <div class="img"><img src="/Projects/personalProject/imgs/Elden-Ring.jpg"></div>
+                                <div class="product-info">
+                                    <div class="title">PS5 艾爾登法環</div>
+                                    <div class="product-text">
+                                        <div class="list-price">售價</div>
+                                        <div class="sale-price">1790元</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 ">
+                        <div class="product-card">
+                            <a href="">
+                                <div class="img"><img src="/Projects/personalProject/imgs/Elden-Ring.jpg"></div>
+                                <div class="product-info">
+                                    <div class="title">PS5 艾爾登法環</div>
+                                    <div class="product-text">
+                                        <div class="list-price">售價</div>
+                                        <div class="sale-price">1790元</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 ">
+                        <div class="product-card">
+                            <a href="">
+                                <div class="img"><img src="/Projects/personalProject/imgs/Elden-Ring.jpg"></div>
+                                <div class="product-info">
+                                    <div class="title">PS5 艾爾登法環</div>
+                                    <div class="product-text">
+                                        <div class="list-price">售價</div>
+                                        <div class="sale-price">1790元</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="read-more">
+                            <button class="btn-read-more">查看更多...</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="hot-preorder">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="hot-preorder-heading">
+                            <h2>熱門預約</h2>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 ">
+                        <div class="product-card">
+                            <a href="">
+                                <div class="img"><img src="/Projects/personalProject/imgs/Elden-Ring.jpg"></div>
+                                <div class="product-info">
+                                    <div class="title">PS5 艾爾登法環</div>
+                                    <div class="product-text">
+                                        <div class="list-price">售價</div>
+                                        <div class="sale-price">1790元</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 ">
+                        <div class="product-card">
+                            <a href="">
+                                <div class="img"><img src="/Projects/personalProject/imgs/Elden-Ring.jpg"></div>
+                                <div class="product-info">
+                                    <div class="title">PS5 艾爾登法環</div>
+                                    <div class="product-text">
+                                        <div class="list-price">售價</div>
+                                        <div class="sale-price">1790元</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 ">
+                        <div class="product-card">
+                            <a href="">
+                                <div class="img"><img src="/Projects/personalProject/imgs/Elden-Ring.jpg"></div>
+                                <div class="product-info">
+                                    <div class="title">PS5 艾爾登法環</div>
+                                    <div class="product-text">
+                                        <div class="list-price">售價</div>
+                                        <div class="sale-price">1790元</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 ">
+                        <div class="product-card">
+                            <a href="">
+                                <div class="img"><img src="/Projects/personalProject/imgs/Elden-Ring.jpg"></div>
+                                <div class="product-info">
+                                    <div class="title">PS5 艾爾登法環</div>
+                                    <div class="product-text">
+                                        <div class="list-price">售價</div>
+                                        <div class="sale-price">1790元</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="read-more">
+                            <button class="btn-read-more">查看更多...</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="news">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="news-heading">
+                            <h2>最新消息</h2>
+                        </div>
+                    </div>
+                    <div class="col-xl-8">
+                        <a href="">
+                            <div class="news-item-img">
+                                <img src="/Projects/personalProject/imgs/TOAR_DLC.jpg">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4">
+                        <a href="">
+                            <div class="news-item-text">
+                                <div class="news-item-title">
+                                    <h3>因應《破曉傳奇 黎明新程》發售，延長營業公告</h3>
+                                </div>
+                                <div class="news-item-date">
+                                    2023.11.01
+                                </div>
+                                <div class="read-more">
+                                    <button class="btn-read-more">查看更多...</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-4">
+                        <a href="">
+                            <div class="news-item-text">
+                                <div class="news-item-title">
+                                    <h3>PS5新機震撼登場，預購即將開啟，獨家優惠等您來，立即預訂您的PS5體驗！</h3>
+                                </div>
+                                <div class="news-item-date">
+                                    2023.11.01
+                                </div>
+                                <div class="read-more">
+                                    <button class="btn-read-more">查看更多...</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-8">
+                        <a>
+                            <div class="news-item-img">
+                                <img src="/Projects/personalProject/imgs/ps5-new.jpg">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="story">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="story-heading">
+                            <h2>Gamer Calico的緣起</h2>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="story-img">
+                            <img src="/Projects/personalProject/imgs/story-img.jpg">
+                        </div>
+                    </div>
+                    <div class="col-xl-1 decoration-box">
+                        <div class="decoration-wire"></div>
+                    </div>
+                    <div class="col-xl-5">
+                        <div class="story-text">
+                            <h3>電玩迷的天堂</h3>
+                            <p>　　花貓電玩為專業電視遊樂器專賣店，門市坐落在桃園市花貓區花貓街86號，虛擬通路包含官方網站、FaceBook粉絲團等，販售商品涵括各式電玩主機、遊戲軟體，以更划算、優惠的價格提供各式遊戲產品之選購。
+                            </p>
+                            <p>　　花貓電玩以提供給顧客最舒適的購物環境、第一手商品訊息及最新商品體驗為目標。主打用平價的消費享受高品質商品，並提供給消費者優良的服務。</p>
+                            <p>　　搭配會員制度，專屬於會員權益與商品方案，讓我們的顧客買便宜又快樂，不再苦惱於價錢，只需充分享受遊戲玩樂的快感！秉持『 為消費者提供最獨特的購物經驗以及幸福感
+                                』的使命，持續陪伴大家的遊樂生活。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3">
+                    <img src="/Projects/personalProject/imgs/GC_ver1.2_png.png">
+                </div>
+                <div class="col-xl-5">
+                    <div class="information">
+                        <h2 class="info-title">門市資訊</h2>
+                        <div class="info-adress">
+                            <h3>地址:</h3>
+                            <p>桃園市花貓區虎斑貓路86號</p>
+                        </div>
+                        <div class="info-phone">
+                            <h3>電話:</h3>
+                            <p>03-0000-0000</p>
+                        </div>
+                        <div class="info-business-hours">
+                            <h3>營業時間:</h3>
+                            <p>每日12:00~22:00<br>公休日與夜排日另行於最新消息與臉書、IG公告</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <div class="social-links">
+                        <h2 class="links-title">關注我們</h2>
+                        <nav style="margin-top: 50px;">
+                            <a href=""><img src="/Projects/personalProject/imgs/FB ICON.png"></a>
+                            <a href=""><img src="/Projects/personalProject/imgs/instagram.png"></a>
+                            <a href=""><img src="/Projects/personalProject/imgs/line.png"></a>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
