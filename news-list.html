@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Projects/personalProject/css/normalize.css">
+    <link rel="stylesheet" href="/Projects/personalProject/css/flex.css">
+    <link rel="stylesheet" href="/Projects/personalProject/css/header.css">
+    <link rel="stylesheet" href="/Projects/personalProject/css/footer.css">
+    <style>
+        * {--section-gap: 25px}
+        .fill-color-block{
+            width: 100%;
+            height: 160px;
+            background-color: #FFF2DB;
+        }
+        .news-heading {
+            letter-spacing: 0.5em;
+            text-align: center;
+            position: relative;
+            padding: 25px;
+            border-bottom: 2px solid #6e6e6e;
+        }
+
+        h1 {
+            font-size: 64px;
+            margin: 0;
+        }
+
+        .news-list{
+            row-gap: 50px;
+        }
+
+        .news {
+            background-color: #FFF2DB;
+        }
+
+        .news-item-img img {
+            width: 100%;
+            vertical-align: top;
+            height: 56.25%;
+        }
+
+        .news-item-text {
+            display: flex;
+            flex-direction: column;
+            margin: var(--column-gap) 0;
+        }
+
+        .news-item-title {
+            letter-spacing: 3px;
+            margin: auto;
+        }
+
+        .news-item-title h2 {
+            margin: 0;
+            font: 28px "Inter-Regular", sans-serif;
+            font-weight: bold;
+        }
+
+        .news-item-date {
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav_bar">
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-2">
+                        <a href=""><img src="/Projects/personalProject/imgs/GC_ver1.2_png.png"></a>
+                    </div>
+                    <div class="col-xl-1">
+                        <a href="">最新消息</a>
+                    </div>
+                    <div class="col-xl-1">
+                        <a href="">商品列表</a>
+                    </div>
+                    <div class="col-xl-1">
+                        <a href="">預約商品</a>
+                    </div>
+                    <div class="col-xl-4">
+                        <input type="text" placeholder="請輸入搜尋內容">
+                        <a href=""><img src="/Projects/personalProject/imgs/search.png" style="width: 50px;"></a>
+                    </div>
+                    <div class="col-xl-1">
+                        <a href="">會員登入</a>
+                    </div>
+                    <div class="col-xl-1">
+                        <a href="">
+                            <img src="/Projects/personalProject/imgs/cart.png" style="width: 50px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="fill-color-block"></div>
+    <main>
+        <div class="news">
+            <div class="container">
+                <div class="row news-list">
+                    <div class="col-xl-12">
+                        <div class="news-heading">
+                            <h1>最新消息</h1>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="news-item">
+                            <a href="">
+                                <div class="news-item-img">
+                                    <img src="/Projects/personalProject/imgs/TOAR_DLC.jpg">
+                                </div>
+                                <div class="news-item-text">
+                                    <div class="news-item-title">
+                                        <h2>因應《破曉傳奇 黎明新程》發售，延長營業公告</h2>
+                                    </div>
+                                    <div class="news-item-date">
+                                        2023.11.01
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="news-item">
+                            <a href="">
+                                <div class="news-item-img">
+                                    <img src="/Projects/personalProject/imgs/TOAR_DLC.jpg">
+                                </div>
+                                <div class="news-item-text">
+                                    <div class="news-item-title">
+                                        <h2>因應《破曉傳奇 黎明新程》發售，延長營業公告</h2>
+                                    </div>
+                                    <div class="news-item-date">
+                                        2023.11.01
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="news-item">
+                            <a href="">
+                                <div class="news-item-img">
+                                    <img src="/Projects/personalProject/imgs/TOAR_DLC.jpg">
+                                </div>
+                                <div class="news-item-text">
+                                    <div class="news-item-title">
+                                        <h2>因應《破曉傳奇 黎明新程》發售，延長營業公告</h2>
+                                    </div>
+                                    <div class="news-item-date">
+                                        2023.11.01
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="news-item">
+                            <a href="">
+                                <div class="news-item-img">
+                                    <img src="/Projects/personalProject/imgs/TOAR_DLC.jpg">
+                                </div>
+                                <div class="news-item-text">
+                                    <div class="news-item-title">
+                                        <h2>因應《破曉傳奇 黎明新程》發售，延長營業公告</h2>
+                                    </div>
+                                    <div class="news-item-date">
+                                        2023.11.01
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="news-item">
+                            <a href="">
+                                <div class="news-item-img">
+                                    <img src="/Projects/personalProject/imgs/TOAR_DLC.jpg">
+                                </div>
+                                <div class="news-item-text">
+                                    <div class="news-item-title">
+                                        <h2>因應《破曉傳奇 黎明新程》發售，延長營業公告</h2>
+                                    </div>
+                                    <div class="news-item-date">
+                                        2023.11.01
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="news-item">
+                            <a href="">
+                                <div class="news-item-img">
+                                    <img src="/Projects/personalProject/imgs/TOAR_DLC.jpg">
+                                </div>
+                                <div class="news-item-text">
+                                    <div class="news-item-title">
+                                        <h2>因應《破曉傳奇 黎明新程》發售，延長營業公告</h2>
+                                    </div>
+                                    <div class="news-item-date">
+                                        2023.11.01
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3">
+                    <img src="/Projects/personalProject/imgs/GC_ver1.2_png.png">
+                </div>
+                <div class="col-xl-5">
+                    <div class="information">
+                        <h2 class="info-title">門市資訊</h2>
+                        <div class="info-adress">
+                            <h2>地址:</h2>
+                            <p>桃園市花貓區虎斑貓路86號</p>
+                        </div>
+                        <div class="info-phone">
+                            <h2>電話:</h2>
+                            <p>03-0000-0000</p>
+                        </div>
+                        <div class="info-business-hours">
+                            <h2>營業時間:</h2>
+                            <p>每日12:00~22:00<br>公休日與夜排日另行於最新消息與臉書、IG公告</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <div class="social-links">
+                        <h2 class="links-title">關注我們</h2>
+                        <nav style="margin-top: 50px;">
+                            <a href=""><img src="/Projects/personalProject/imgs/FB ICON.png"></a>
+                            <a href=""><img src="/Projects/personalProject/imgs/instagram.png"></a>
+                            <a href=""><img src="/Projects/personalProject/imgs/line.png"></a>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
