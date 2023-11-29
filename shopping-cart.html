@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/flex.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/path.css">
+    <link rel="stylesheet" href="/css/arrow.css">
+    <link rel="stylesheet" href="/css/btn.css">
+    <style>
+        * {--section-gap: 25px}        
+        .fill-color-block {
+            width: 100%;
+            height: 160px;
+            background-color: #FFF2DB;
+        }
+        .shopping-cart{
+            background-color: #FFF2DB;
+        }
+        .cart-content table {
+            border-collapse: collapse;
+        }
+        table {
+            font-size: 18px;
+            text-align: center;
+        }
+        thead td {
+            border: 1px solid #6e6e6e;
+            background-color: #FFB84F;
+            font-weight: bold;
+        }
+        tr td:first-child  {
+            width: 22.2222%;
+            padding: 20px 10px;
+        }
+        tr td:first-child img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .choose-pay-method div{
+            box-sizing: border-box;
+            border: 1px solid #6e6e6e;
+            background-color: #FFB84F;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .cart-aside {
+            box-sizing: border-box;
+            border: 1px solid #6e6e6e;
+
+        }
+        .cart-aside {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .discount-section h2{
+            margin: 20px;
+            font-size: 32px;
+            text-align: center;
+        }
+        .order-amounte {
+            font-size: 18px;
+            margin: 0 15px;
+        }
+        .order-amounte h3{
+            margin: var(--column-gap) 0;
+        }
+        .calculate-order-amout {
+            padding-inline-start: 0;
+            border-top: 1px solid #6e6e6e;
+            border-bottom: 1px solid #6e6e6e;
+            padding: var(--column-gap) 0;
+            margin: 0;
+        }
+        li {
+            list-style: none;
+            padding: var(--column-gap) 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .total-amount{
+            margin: var(--column-gap) 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav_bar">
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-2">
+                        <a href=""><img src="/imgs/GC_ver1.2_png.png"></a>
+                    </div>
+                    <div class="col-xl-1">
+                        <a href="">最新消息</a>
+                    </div>
+                    <div class="col-xl-1">
+                        <a href="">商品列表</a>
+                    </div>
+                    <div class="col-xl-1">
+                        <a href="">預約商品</a>
+                    </div>
+                    <div class="col-xl-4">
+                        <input type="text" placeholder="請輸入搜尋內容">
+                        <a href=""><img src="/imgs/search.png" style="width: 50px;"></a>
+                    </div>
+                    <div class="col-xl-1">
+                        <a href="">會員登入</a>
+                    </div>
+                    <div class="col-xl-1">
+                        <a href="">
+                            <img src="/imgs/cart.png" style="width: 50px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <div class="fill-color-block"></div>
+        <div class="shopping-cart">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="path-group">
+                            <div class="arrow-rtl"></div>
+                            <div class="path-text">
+                                <div class="path-text-A">繼續購物</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <h1>購物車</h1>
+                    </div>
+                    <div class="col-xl-9">
+                        <div class="cart-content">
+                            <table>
+                                <thead>
+                                    <td>商品圖</td>
+                                    <td>商品名稱</td>
+                                    <td>單價</td>
+                                    <td>數量</td>
+                                    <td>小計</td>
+                                    <td>刪除</td>
+                                </thead>
+                                <tr>
+                                    <td><img src="/imgs/FFXVI_Packshot.jpg"></td>
+                                    <td>PSX Final Fantasy XVI</td>
+                                    <td>$ 1,990</td>
+                                    <td>
+                                        <input type="number" class="btn-number-choice" value="1">
+                                    </td>
+                                    <td>$ 1,990</td>
+                                    <td><button class="btn-delete"><img src="/imgs/cancel.png"></button></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="/imgs/armor-core.jpg"></td>
+                                    <td>【預購】PSX Armor Crisis V</td>
+                                    <td>$ 1,790</td>
+                                    <td>
+                                        <input type="number" class="btn-number-choice" value="1">
+                                    </td>
+                                    <td>$ 1,790</td>
+                                    <td><button class="btn-delete"><img src="/imgs/cancel.png"></button></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="choose-pay-method row">
+                            <div class="col-xl-3">支付方式</div>
+                            <div class="col-xl-3"><input type="radio" name="pay-method">信用卡</div>
+                            <div class="col-xl-3"><input type="radio" name="pay-method">貨到付款</div>
+                            <div class="col-xl-3"><input type="radio" name="pay-method">到店取貨付款</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="cart-aside">
+                            <div class="discount-section">
+                                <h2>使用優惠券</h2>
+                                <div class="discount-code">
+                                    <input type="text" class="discount-input-area" placeholder="請輸入優惠碼" size="12"><input type="submit" class="btn-discount">
+                                </div>
+                            </div>
+                            <div class="order-amounte">
+                                <h3>訂單金額</h3>
+                                <ul class="calculate-order-amout">
+                                    <li class="amout">
+                                        <span>商品總金額</span>
+                                        <span>$3,780</span>
+                                    </li>
+                                    <li class="deliver-fee">
+                                        <span>運費</span>
+                                        <span>$0</span>
+                                    </li>
+                                    <li class="discount">
+                                        <span>優惠券折抵</span>
+                                        <span>-$0</span>
+                                    </li>
+                                </ul>
+                                <div class="total-amount">
+                                    <span>結帳金額</span>
+                                    <span>$3,780</span>
+                                </div>
+                            </div>
+                            <div class="cart-aside-next-btn">
+                                <button class="btn-next">下一步:填寫付款/送貨資訊</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3">
+                    <img src="/imgs/GC_ver1.2_png.png">
+                </div>
+                <div class="col-xl-5">
+                    <div class="information">
+                        <h2 class="info-title">門市資訊</h2>
+                        <div class="info-adress">
+                            <h3>地址:</h3>
+                            <p>桃園市花貓區虎斑貓路86號</p>
+                        </div>
+                        <div class="info-phone">
+                            <h3>電話:</h3>
+                            <p>03-0000-0000</p>
+                        </div>
+                        <div class="info-business-hours">
+                            <h3>營業時間:</h3>
+                            <p>每日12:00~22:00<br>公休日與夜排日另行於最新消息與臉書、IG公告</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <div class="social-links">
+                        <h2 class="links-title">關注我們</h2>
+                        <nav style="margin-top: 50px;">
+                            <a href=""><img src="/imgs/FB ICON.png"></a>
+                            <a href=""><img src="/imgs/instagram.png"></a>
+                            <a href=""><img src="/imgs/line.png"></a>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

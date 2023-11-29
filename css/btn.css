@@ -1,0 +1,116 @@
+.btn-read-more {
+    box-sizing: border-box;
+    border: 1px solid #6e6e6e;
+    border-radius: 10px;
+    font: 18px "Inter-Regular", sans-serif;
+    padding: 18px 40px;
+    background-color: #fff0;
+}
+
+.btn-read-more:hover {
+    border-color: #6247E8;
+    color: #6247E8;
+    box-shadow: 3px 3px 4px 0 #1F0699;
+}
+
+.btn-buy {
+    box-sizing: border-box;
+    border: 2px solid #000;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 36px;
+    padding: 8px 24px;
+    background-color: #E88847;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-buy:hover {
+    background: #ffa96f;
+    box-shadow: 3px 3px 4px 0px #AA4500
+}
+
+.btn-buy img {
+    width: 44px;
+    vertical-align: top;
+}
+
+.number-choice {
+    font-size: 18px;
+}
+.btn-number-choice {
+    box-sizing: border-box;
+    width: 90px;
+    height: 40px;
+    border: 2px solid #000;
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn-delete {
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #6e6e6e;
+    background-color: #00f0;
+    color: #6e6e6e;
+    display: flex;
+    align-items: center;
+}
+
+.btn-delete img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.discount-code {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: top;
+}
+
+.discount-input-area {
+    box-sizing: border-box;
+    margin-left: auto;
+    width: fit-content;
+    padding: 15px 5px;
+    text-align: left;
+    font-size: 18px;
+    color: #000;
+    border: 1px solid #6e6e6e;
+    border-radius: 0;
+}
+
+.btn-discount {
+    box-sizing: border-box;
+    margin-right: auto;
+    padding: 15px 10px;
+    font-size: 16px;
+    background-color: #E88847;
+    color: #fff;
+    border: 1px solid #6e6e6e;
+}
+
+.btn-next{
+    box-sizing: border-box;
+    border: 2px solid #000;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 10px;
+    background-color: #E88847;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: var(--section-gap) auto;
+}
+.btn-next:hover {
+        background: #ffa96f;
+        box-shadow: 3px 3px 4px 0px #AA4500
+}
