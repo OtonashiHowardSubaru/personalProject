@@ -47,8 +47,14 @@
             height: 75%;
             align-self: center;
         }
-        .social-links img {
-            width: 80px;
+        .social-icons {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .social-icons a {
+            height: fit-content;
+            width: fit-content;
         }
 
         footer h2 {

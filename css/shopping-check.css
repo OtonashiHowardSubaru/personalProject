@@ -52,7 +52,7 @@ tr td:first-child img {
     align-items: center;
     padding: var(--column-gap) 0;
 }
-.payment-info-heading, .reciever-info-heading > h4 {
+.payment-info-heading > h4, .reciever-info-heading > h4 {
     margin: 0;
     padding: 0 var(--column-gap);
 }
