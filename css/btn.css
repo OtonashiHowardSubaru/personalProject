@@ -114,3 +114,41 @@
         background: #ffa96f;
         box-shadow: 3px 3px 4px 0px #AA4500
 }
+.btn-login {
+    box-sizing: border-box;
+    border: 2px solid #000;
+    margin: 20px auto;
+    width: 95%;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 10px;
+    background-color: #E88847;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.btn-login:hover {
+    background: #ffa96f;
+    box-shadow: 3px 3px 4px 0px #AA4500
+}
+
+.btn-foget-PW, .btn-join {
+    box-sizing: border-box;
+    border: 2px solid #000;
+    width: 45%;
+    border-radius: 10px;
+    margin: auto;
+    color: #000;
+    font-size: 16px;
+    padding: 15px 10px;
+    background-color: #fff;
+}
+.btn-foget-PW:hover, .btn-join:hover{
+    border-color: #6247E8;
+    color: #6247E8;
+    box-shadow: 3px 3px 4px 0 #1F0699;
+}
+

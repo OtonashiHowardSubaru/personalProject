@@ -1,4 +1,7 @@
 * {--section-gap: 25px}
+a {
+    text-decoration: none;
+}
 
 [class*="-heading"] {
     font-size: 36px;
@@ -58,12 +61,12 @@
 }
 
 .news-item-title {
-    font-size: 32px;
-    letter-spacing: 3px;
     margin: auto;
 }
 
 .news-item-title h3 {
+    font-size: 32px;
+    letter-spacing: 3px;
     margin: 0;
 }
 

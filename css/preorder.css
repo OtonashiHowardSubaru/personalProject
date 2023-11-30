@@ -19,6 +19,8 @@ h1{
 }
 
 .mini-banner img {
+    height: 350PX;
+    
     vertical-align: top;
     width: 100%;
 }
@@ -26,6 +28,7 @@ h1{
 .preorder-list {
     background-color: #FFF2DB;
 }
+
 
 .preorder-list-heading{
     width: fit-content;
@@ -48,12 +51,15 @@ h1{
     font-weight: normal;
 }
 
-.list-row {
+.filted-list {
+    display: flex;
+    flex-wrap: wrap;
     row-gap: 80px;
     align-items: center;
 }
 
 .preorder-card{
+    width: 100%;
     display: flex;
 }
 

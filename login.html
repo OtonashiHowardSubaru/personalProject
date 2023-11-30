@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員登入</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/flex.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/btn.css">
+    <style>
+        .login {
+            
+            display: flex;
+            justify-content: center;
+        }
+
+        .login-window {
+            background-color: #FFF2DB;
+            border: 1px solid #6e6e6e;
+            border-radius: 20px;
+            box-sizing: border-box;
+            width: 350px;
+            padding: 10px 20px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px;
+            font-size: 36px;
+        }
+        label{
+            display: flex;
+            flex-direction: column;
+        }
+        span{
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        input {
+            height: 25px;
+        }
+        .login-support-btns{
+            display: flex;
+
+        }
+    </style>
+</head>
+
+<body>
+        <div class="login">
+            <div class="login-window">
+                <h1>會員登入</h1>
+                <form>
+                    <label for="ACCT">
+                        <span>信箱</span>
+                        <input type="email" id="mem-email" placeholder="請輸入信箱">
+                    </label>
+                    <label for="PW">
+                        <span>密碼</span>
+                        <input type="password" id="mem-PW" placeholder="請輸入密碼">
+                    </label>
+                </form>
+                    <button class="btn-login">登入</button>
+                <div class="login-support-btns">
+                    <button class="btn-foget-PW">忘記密碼</button>
+                    <button class="btn-join">加入會員</button>
+                </div>
+            </div>
+</body>
+
+</html>

@@ -20,6 +20,8 @@ h1{
 }
 
 .mini-banner img {
+    height: 350PX;
+    
     vertical-align: top;
     width: 100%;
 }
