@@ -45,7 +45,7 @@ h1 {
 
 .news-item-title h2 {
     margin: 0;
-    font: 28px "Inter-Regular", sans-serif;
+    font-size: 28px;
     font-weight: bold;
 }
 

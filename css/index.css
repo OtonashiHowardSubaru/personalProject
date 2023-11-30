@@ -58,7 +58,7 @@
 }
 
 .news-item-title {
-    font: 32px "Inter-Regular", sans-serif;
+    font-size: 32px;
     letter-spacing: 3px;
     margin: auto;
 }

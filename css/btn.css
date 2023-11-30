@@ -2,7 +2,7 @@
     box-sizing: border-box;
     border: 1px solid #6e6e6e;
     border-radius: 10px;
-    font: 18px "Inter-Regular", sans-serif;
+    font-size: 18px;
     padding: 18px 40px;
     background-color: #fff0;
 }
@@ -100,7 +100,7 @@
     border: 2px solid #000;
     border-radius: 10px;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     padding: 15px 10px;
     background-color: #E88847;
     display: flex;

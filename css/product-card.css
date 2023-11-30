@@ -20,7 +20,7 @@
     padding: 10px;
     box-sizing: border-box;
     border: 1px #6e6e6e solid;
-    font: 24px "Inter-Regular", sans-serif;
+    font-size: 24px;
     text-decoration: none;
 }
 

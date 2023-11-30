@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/css/path.css">
     <link rel="stylesheet" href="/css/arrow.css">
     <link rel="stylesheet" href="/css/btn.css">
-    <link rel="stylesheet" href="/css/shopping-cart.css">
+    <link rel="stylesheet" href="/css/shopping-check.css">
     <style>
     </style>
 </head>
@@ -58,7 +58,7 @@
                         <div class="path-group">
                             <div class="arrow-rtl"></div>
                             <div class="path-text">
-                                <div class="path-text-A">繼續購物</div>
+                                <div class="path-text-A">返回購物車</div>
                             </div>
                         </div>
                     </div>
@@ -74,7 +74,6 @@
                                     <td>單價</td>
                                     <td>數量</td>
                                     <td>小計</td>
-                                    <td>刪除</td>
                                 </thead>
                                 <tr>
                                     <td><img src="/imgs/FFXVI_Packshot.jpg"></td>
@@ -84,34 +83,62 @@
                                         <input type="number" class="btn-number-choice" value="1">
                                     </td>
                                     <td>$ 1,990</td>
-                                    <td><button class="btn-delete"><img src="/imgs/cancel.png"></button></td>
-                                </tr>
-                                <tr>
-                                    <td><img src="/imgs/armor-core.jpg"></td>
-                                    <td>【預購】PSX Armor Crisis V</td>
-                                    <td>$ 1,790</td>
-                                    <td>
-                                        <input type="number" class="btn-number-choice" value="1">
-                                    </td>
-                                    <td>$ 1,790</td>
-                                    <td><button class="btn-delete"><img src="/imgs/cancel.png"></button></td>
                                 </tr>
                             </table>
                         </div>
                         <div class="choose-pay-method row">
-                            <div class="col-xl-3">支付方式</div>
-                            <div class="col-xl-3"><input type="radio" name="pay-method">信用卡</div>
-                            <div class="col-xl-3"><input type="radio" name="pay-method">貨到付款</div>
-                            <div class="col-xl-3"><input type="radio" name="pay-method">到店取貨付款</div>
+                            <div class="col-xl-3 ">購買資訊</div>
+                            <div class="col-xl-9">
+                                <form class="purchase-info">
+                                    <label for="payment-info" class="payment-info">
+                                        <div class="payment-info-heading">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23" fill="none">
+                                                <path d="M23 4.75054H3C2.73478 4.75054 2.48043 4.64502 2.29289 4.45718C2.10536 4.26934 2 4.01458 2 3.74894C2 3.4833 2.10536 3.22854 2.29289 3.0407C2.48043 2.85287 2.73478 2.74734 3 2.74734H20C20.2652 2.74734 20.5196 2.64182 20.7071 2.45398C20.8946 2.26614 21 2.01138 21 1.74574C21 1.4801 20.8946 1.22534 20.7071 1.0375C20.5196 0.849666 20.2652 0.744141 20 0.744141H3C2.20435 0.744141 1.44129 1.06072 0.87868 1.62423C0.316071 2.18774 0 2.95202 0 3.74894V19.7745C0 20.5715 0.316071 21.3357 0.87868 21.8993C1.44129 22.4628 2.20435 22.7793 3 22.7793H23C23.5304 22.7793 24.0391 22.5683 24.4142 22.1926C24.7893 21.8169 25 21.3074 25 20.7761V6.75374C25 6.22246 24.7893 5.71294 24.4142 5.33727C24.0391 4.96159 23.5304 4.75054 23 4.75054ZM23 20.7761H3C2.73478 20.7761 2.48043 20.6706 2.29289 20.4828C2.10536 20.2949 2 20.0402 2 19.7745V6.58222C2.32109 6.69622 2.65933 6.75424 3 6.75374H23V20.7761ZM17 13.2641C17 12.967 17.088 12.6765 17.2528 12.4295C17.4176 12.1824 17.6519 11.9898 17.926 11.8761C18.2001 11.7624 18.5017 11.7326 18.7926 11.7906C19.0836 11.8486 19.3509 11.9917 19.5607 12.2018C19.7704 12.4119 19.9133 12.6796 19.9712 12.971C20.0291 13.2625 19.9993 13.5646 19.8858 13.8391C19.7723 14.1136 19.58 14.3483 19.3334 14.5133C19.0867 14.6784 18.7967 14.7665 18.5 14.7665C18.1022 14.7665 17.7206 14.6083 17.4393 14.3265C17.158 14.0447 17 13.6626 17 13.2641Z" fill="black"/>
+                                            </svg>
+                                            <h4>付款資訊</h4>
+                                        </div>
+                                        <div class="card-number"><span>信用卡卡號</span><input type="text" id="card-number" size="20" placeholder="請輸入卡號"></div>
+                                        <div class="card-ExpDate"><span>信用卡有效期限</span><input type="text" id="card-ExpDate" size="5" placeholder="MM/YY"></div>
+                                        <div class="card-SC"><span>信用卡認證碼</span><input type="text" id="card-SC" size="3" placeholder="CSC"></div>
+                                    </label>
+                                    <label for="reciever-info">
+                                        <div class="reciever-info-heading">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23" fill="none">
+                                                <path d="M23 4.75054H3C2.73478 4.75054 2.48043 4.64502 2.29289 4.45718C2.10536 4.26934 2 4.01458 2 3.74894C2 3.4833 2.10536 3.22854 2.29289 3.0407C2.48043 2.85287 2.73478 2.74734 3 2.74734H20C20.2652 2.74734 20.5196 2.64182 20.7071 2.45398C20.8946 2.26614 21 2.01138 21 1.74574C21 1.4801 20.8946 1.22534 20.7071 1.0375C20.5196 0.849666 20.2652 0.744141 20 0.744141H3C2.20435 0.744141 1.44129 1.06072 0.87868 1.62423C0.316071 2.18774 0 2.95202 0 3.74894V19.7745C0 20.5715 0.316071 21.3357 0.87868 21.8993C1.44129 22.4628 2.20435 22.7793 3 22.7793H23C23.5304 22.7793 24.0391 22.5683 24.4142 22.1926C24.7893 21.8169 25 21.3074 25 20.7761V6.75374C25 6.22246 24.7893 5.71294 24.4142 5.33727C24.0391 4.96159 23.5304 4.75054 23 4.75054ZM23 20.7761H3C2.73478 20.7761 2.48043 20.6706 2.29289 20.4828C2.10536 20.2949 2 20.0402 2 19.7745V6.58222C2.32109 6.69622 2.65933 6.75424 3 6.75374H23V20.7761ZM17 13.2641C17 12.967 17.088 12.6765 17.2528 12.4295C17.4176 12.1824 17.6519 11.9898 17.926 11.8761C18.2001 11.7624 18.5017 11.7326 18.7926 11.7906C19.0836 11.8486 19.3509 11.9917 19.5607 12.2018C19.7704 12.4119 19.9133 12.6796 19.9712 12.971C20.0291 13.2625 19.9993 13.5646 19.8858 13.8391C19.7723 14.1136 19.58 14.3483 19.3334 14.5133C19.0867 14.6784 18.7967 14.7665 18.5 14.7665C18.1022 14.7665 17.7206 14.6083 17.4393 14.3265C17.158 14.0447 17 13.6626 17 13.2641Z" fill="black"/>
+                                            </svg>
+                                            <h4>收件人資訊</h4>
+                                        </div>
+                                        <div class="RCV-name"><span>收件人姓名</span><input type="text" id="RCV-name" size="20"></div>
+                                        <div class="RCV-phone"><span>收件人電話</span><input type="text" id="RCV-phone" size="10"></div>
+                                        <div class="RCV-full-adress">
+                                            <span>收件人地址</span>
+                                            <select type="text" id="RCV-city">
+                                                <option value="taoyuan">桃園市</option>
+                                            </select>
+                                            <select type="text" id="RCV-district">
+                                                <option value="taoyuan-D">桃園區</option>
+                                                <option value="zhongli-D">中壢區</option>
+                                                <option value="yangmei-D">楊梅區</option>
+                                                <option value="luzhu-D">蘆竹區</option>
+                                                <option value="daxi-D">大溪區</option>
+                                                <option value="longtan-D">龍潭區</option>
+                                                <option value="dayuan-D">大園區</option>
+                                                <option value="pingzhen-D">平鎮區</option>
+                                                <option value="guanyin-D">觀音區</option>
+                                                <option value="xinwu-D">新屋區</option>
+                                                <option value="fuxing-D">復興區</option>
+                                            </select>
+                                            <input type="text" id="RCV-adress" size="">
+                                        </div>
+                                    </label>
+                                </form>
+                            </div>
                         </div>
                     </div>
                     <div class="col-xl-3">
                         <div class="cart-aside">
-                            <div class="discount-section">
-                                <h2>使用優惠券</h2>
-                                <div class="discount-code">
-                                    <input type="text" class="discount-input-area" placeholder="請輸入優惠碼" size="12"><input type="submit" class="btn-discount">
-                                </div>
+                            <div class="sent-order">
+                                <h2>送出訂單</h2>
                             </div>
                             <div class="order-amounte">
                                 <h3>訂單金額</h3>

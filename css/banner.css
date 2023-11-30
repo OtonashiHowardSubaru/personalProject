@@ -13,14 +13,14 @@
     max-width: 1200px;
     margin: auto;
     height: 690px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     position: relative;
     top: 160px;
 }
 
  [class*="slogan-"] {
     color: #fff;
-    font: 128px "Inter-Medium", sans-serif;
+    font-size: 64px;
     font-weight: bold;
     text-shadow: -1px -1px 0 #000,
                 1px -1px 0 #000,
@@ -30,11 +30,11 @@
     padding: var(--column-gap);
 }
 .slogan-partA {text-align: left;}
-.slogan-partB {text-align: center;}
-.slogan-partC {text-align: right; font-size: 0;}
-.calico-span1 { font-size: 128px; color: #FFB84F;}
-.calico-span2 { font-size: 128px; }
-.calico-span3 { font-size: 128px; color: #664008;}
+.slogan-partB {text-align: left;}
+.slogan-partC {text-align: left; font-size: 0;}
+.calico-span1 { font-size: 64px; color: #FFB84F;}
+.calico-span2 { font-size: 64px; }
+.calico-span3 { font-size: 64px; color: #664008;}
 .newProducts {
     background-color: #FFF2DB;
 }

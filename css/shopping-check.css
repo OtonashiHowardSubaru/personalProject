@@ -1,0 +1,122 @@
+* {--section-gap: 25px}        
+.fill-color-block {
+    width: 100%;
+    height: 160px;
+    background-color: #FFF2DB;
+}
+.shopping-cart{
+    background-color: #FFF2DB;
+}
+.cart-content table {
+    border-collapse: collapse;
+}
+table {
+    font-size: 18px;
+    text-align: center;
+}
+thead td {
+    border: 1px solid #6e6e6e;
+    background-color: #FFB84F;
+    font-weight: bold;
+}
+tr td:first-child  {
+    width: 22.2222%;
+    padding: 20px 10px;
+}
+tr td:first-child img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.btn-delete{
+    margin: auto;
+}
+.choose-pay-method > div:first-child {
+    box-sizing: border-box;
+    border: 1px solid #6e6e6e;
+    background-color: #FFB84F;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-weight: bold;
+    height: fit-content;
+}
+.purchase-ing > label {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: var(--column-gap);
+}
+.payment-info-heading, .reciever-info-heading {
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    padding: var(--column-gap) 0;
+}
+.payment-info-heading, .reciever-info-heading > h4 {
+    margin: 0;
+    padding: 0 var(--column-gap);
+}
+
+[class*="card-"], [class*="RCV-"] {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+[class*="card-"] > span, [class*="RCV-"] > span {
+    padding-inline-start: var(--column-gap);
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 25%;
+    height: 24px;
+}
+[id*="card-"] {
+    height: 22px;
+}
+
+.cart-aside {
+    box-sizing: border-box;
+    border: 1px solid #6e6e6e;
+
+}
+.cart-aside {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: var(--column-gap) 0;
+}
+.sent-order h2{
+    margin: var(--column-gap);
+    font-size: 32px;
+    text-align: center;
+}
+.order-amounte {
+    font-size: 18px;
+    margin: 0 15px;
+}
+.order-amounte h3{
+    margin: var(--column-gap) 0;
+}
+.calculate-order-amout {
+    padding-inline-start: 0;
+    border-top: 1px solid #6e6e6e;
+    border-bottom: 1px solid #6e6e6e;
+    padding: var(--column-gap) 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+    padding: var(--column-gap) 0;
+    display: flex;
+    justify-content: space-between;
+}
+.total-amount{
+    margin: var(--column-gap) 0;
+    display: flex;
+    justify-content: space-between;
+}
+.shopping-support{
+    margin: auto;
+    padding-bottom: var(--column-gap);
+    font-size: 18px;
+}
