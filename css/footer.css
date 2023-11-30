@@ -36,11 +36,14 @@
         footer [class*="info-"] > *{
             margin: 0;
         }
+        .info-title {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
 
         footer .information {
             display: flex;
             flex-direction: column;
-            gap: calc(var(--column-gap) * 2);
         }
 
         footer .col-xl-4 {

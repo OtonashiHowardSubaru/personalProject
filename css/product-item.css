@@ -45,8 +45,7 @@ h1 {
 }
 .product-features{
     width: 100%;
-    margin-top: calc(var(--section-gap)*2);
-    margin-bottom: calc(var(--section-gap)*2);
+    margin: var(--section-gap) 0;
 }
 ul {
     font-size: 18px;
@@ -77,10 +76,7 @@ ul {
 }
 .section-gap-line {
     border-top: 2px solid #6e6e6e;
-    margin: 0 10px;
-}
-.product-detail {
-    padding-top: var(--section-gap);
+    margin: var(--section-gap) 10px;
 }
 .product-detail img {
     width: 100%;
