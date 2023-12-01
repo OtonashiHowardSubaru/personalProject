@@ -77,6 +77,9 @@ ul {
 .section-gap-line {
     border-top: 2px solid #6e6e6e;
     margin: var(--section-gap) 10px;
+    padding-top: var(--section-gap);
+    display: flex;
+    justify-content: center;
 }
 .product-detail img {
     width: 100%;
