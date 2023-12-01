@@ -4,7 +4,6 @@ a {
 }
 
 [class*="-heading"] {
-    font-size: 36px;
     letter-spacing: 0.5em;
     text-align: center;
     position: relative;
@@ -14,6 +13,7 @@ a {
 }
 
 [class*="-heading"]>h2 {
+    font-size: 36px;
     margin: 0;
 }
 
