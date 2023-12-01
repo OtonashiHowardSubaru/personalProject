@@ -1,11 +1,14 @@
 .product-card {
     position: relative;
+    top: 0;
+    right: 0;
+    transition: top .3s, right .3s;
 }
 
 .product-card:hover {
-    position: relative;
     top: 10px;
-    left: -10px;
+    right: 10px;
+    transition: top .3s, right .3s;
     box-shadow: 15px -15px 10px 5px #E5BB7A;
 }
 .product-card .img {
