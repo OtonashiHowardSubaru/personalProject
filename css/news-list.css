@@ -28,18 +28,31 @@ h1 {
 .news {
     background-color: #FFF2DB;
 }
-
+.news-item{
+    border: 1px solid #6e6e6e;
+    transform: scale(1);
+    transition: 1s;
+}
+.news-item:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
 .news-item-img img {
     width: 100%;
     height: 210px;
     vertical-align: top;
     object-fit: cover;
+    
+}
+.news-item-img img:hover {
+    
 }
 
 .news-item-text {
+
     display: flex;
     flex-direction: column;
-    margin: var(--column-gap) 0;
+    margin: var(--column-gap) 5px;
 }
 
 .news-item-title {
@@ -48,7 +61,7 @@ h1 {
 
 .news-item-title h2 {
     margin: 0;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
 }
 
