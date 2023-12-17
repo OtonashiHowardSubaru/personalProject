@@ -1,31 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/font-family.css">
     <link rel="stylesheet" href="/css/btn.css">
-    <style>
-    </style>
+    <link rel="stylesheet" href="/css/flex.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/numberChoice.js"></script>
 </head>
-
 <body>
-    <button class="btn-read-more">查看更多...</button>
-    <button class="btn-buy">
-        <div><img src="/imgs/cart-white.png"></div>加入購物車
+    <div class="read-more-link">
+        <a class="btn-read-more">查看更多</a>
+    </div>
+    <div class="news-item-switcher">
+        <button class="btn-previous-news">
+            <div class="arrow-cirle">
+                <div class="arrow-rtl"></div>
+            </div>
+        </button>
+        <button class="btn-next-news">
+            <div class="arrow-cirle">
+                <div class="arrow-ltr"></div>
+            </div>
+        </button>
+    </div>
+    <form class="col-6 numberChoice" name="numberChoice" action="#">
+        <label for="">數量</label>
+        <input type="button" value="-" class="qtyMinus">
+        <input type="text" name="quantity" value="0" class="qty">
+        <input type="button" value="+" class="qtyPlus">
+    </form>
+    <form class="col-6 numberChoice" name="numberChoice" action="#">
+        <label for="">數量</label>
+        <input type="button" value="-" class="qtyMinus">
+        <input type="text" name="quantity" value="0" class="qty">
+        <input type="button" value="+" class="qtyPlus">
+    </form>
+    <div class="btn-buy-product">
+        <button id="addToCart">
+            <svg alt="購物車" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+            viewBox="0 0 50 50" fill="none">
+            <title>購物車</title>
+            <path
+                d="M39.0625 37.5C39.7135 37.5 40.3239 37.6221 40.8936 37.8662C41.4632 38.1104 41.9596 38.444 42.3828 38.8672C42.806 39.2904 43.1396 39.7868 43.3838 40.3564C43.6279 40.9261 43.75 41.5365 43.75 42.1875C43.75 42.8385 43.6279 43.4489 43.3838 44.0186C43.1396 44.5882 42.806 45.0846 42.3828 45.5078C41.9596 45.931 41.4632 46.2646 40.8936 46.5088C40.3239 46.7529 39.7135 46.875 39.0625 46.875C38.4115 46.875 37.8011 46.7529 37.2314 46.5088C36.6618 46.2646 36.1654 45.931 35.7422 45.5078C35.319 45.0846 34.9854 44.5882 34.7412 44.0186C34.4971 43.4489 34.375 42.8385 34.375 42.1875C34.375 41.6829 34.4645 41.1621 34.6436 40.625H21.6064C21.7855 41.1621 21.875 41.6829 21.875 42.1875C21.875 42.8385 21.7529 43.4489 21.5088 44.0186C21.2646 44.5882 20.931 45.0846 20.5078 45.5078C20.0846 45.931 19.5882 46.2646 19.0186 46.5088C18.4489 46.7529 17.8385 46.875 17.1875 46.875C16.5365 46.875 15.9261 46.7529 15.3564 46.5088C14.7868 46.2646 14.2904 45.931 13.8672 45.5078C13.444 45.0846 13.1104 44.5882 12.8662 44.0186C12.6221 43.4489 12.5 42.8385 12.5 42.1875C12.5 41.2923 12.736 40.4622 13.208 39.6973C13.68 38.9323 14.3311 38.3545 15.1611 37.9639L4.61426 6.25H0V3.125H6.86035L8.93555 9.375H50L42.7246 31.25H16.2354L18.3105 37.5H39.0625ZM9.98535 12.5L15.1855 28.125H40.4541L45.6543 12.5H9.98535ZM18.75 42.1875C18.75 41.7643 18.5954 41.3981 18.2861 41.0889C17.9769 40.7796 17.6107 40.625 17.1875 40.625C16.7643 40.625 16.3981 40.7796 16.0889 41.0889C15.7796 41.3981 15.625 41.7643 15.625 42.1875C15.625 42.6107 15.7796 42.9769 16.0889 43.2861C16.3981 43.5954 16.7643 43.75 17.1875 43.75C17.6107 43.75 17.9769 43.5954 18.2861 43.2861C18.5954 42.9769 18.75 42.6107 18.75 42.1875ZM39.0625 43.75C39.4857 43.75 39.8519 43.5954 40.1611 43.2861C40.4704 42.9769 40.625 42.6107 40.625 42.1875C40.625 41.7643 40.4704 41.3981 40.1611 41.0889C39.8519 40.7796 39.4857 40.625 39.0625 40.625C38.6393 40.625 38.2731 40.7796 37.9639 41.0889C37.6546 41.3981 37.5 41.7643 37.5 42.1875C37.5 42.6107 37.6546 42.9769 37.9639 43.2861C38.2731 43.5954 38.6393 43.75 39.0625 43.75Z"
+                fill="#FFF" />
+            </svg>
+            加入購物車
+        </button>
+    </div>
+    <button id="deleteProductInCart">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 100 100" fill="none">
+            <title>刪除鍵</title>
+            <path d="M97.0404 17.0779C100.945 13.1735 100.945 6.83273 97.0404 2.92831C93.136 -0.976105 86.7952 -0.976105 82.8908 2.92831L50 35.8504L17.0779 2.95955C13.1735 -0.94487 6.83273 -0.94487 2.92831 2.95955C-0.976105 6.86397 -0.976105 13.2047 2.92831 17.1092L35.8504 50L2.95955 82.9221C-0.944869 86.8265 -0.944869 93.1673 2.95955 97.0717C6.86397 100.976 13.2047 100.976 17.1092 97.0717L50 64.1496L82.9221 97.0404C86.8265 100.945 93.1673 100.945 97.0717 97.0404C100.976 93.136 100.976 86.7952 97.0717 82.8908L64.1496 50L97.0404 17.0779Z" fill="#6E6E6E"/>
+        </svg>
     </button>
-    <div class="number-choice">
-        數量
-        <input type="number" class="btn-number-choice" value="1">
+    <div class="go-to-linepay">
+        <button id="goLinePay">前往LinePay</button>
     </div>
-    <button class="btn-delete"><img src="/imgs/cancel.png"></button>
     <div class="discount-code">
-        <input type="text" class="discount-input-area" placeholder="請輸入優惠碼" size="12"><input type="submit" class="btn-discount">
+        <input type="text" id="discountCode" placeholder="請輸入優惠碼" size="12">
+        <input type="submit" id="btnDiscount">
     </div>
-    <button class="btn-next">下一步:填寫付款/送貨資訊</button>
-    <button class="btn-login">登入</button>
-    <button class="btn-foget-PW">忘記密碼</button>
-    <button class="btn-join">加入會員</button>
-</body>   
+    <div class="go-to-checkout">
+        <button id="checkout">
+            下一步:填寫付款/送貨資訊
+        </button>
+    </div>
+</body>
 </html>

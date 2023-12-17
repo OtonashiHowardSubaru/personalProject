@@ -1,154 +1,181 @@
+.read-more-link {
+    width: fit-content;
+    padding: 10px 0;
+    margin: var(--section-gap) auto 0 auto;
+}
 .btn-read-more {
     box-sizing: border-box;
     border: 1px solid #6e6e6e;
     border-radius: 10px;
-    font-size: 18px;
-    padding: 18px 40px;
+    font-size: 16px;
+    padding: 10px 30px;
     background-color: #fff0;
+    align-items:baseline ;
 }
-
 .btn-read-more:hover {
-    border-color: #6247E8;
-    color: #6247E8;
-    box-shadow: 3px 3px 4px 0 #1F0699;
+    border: 1px solid #E5BB7A;
+    color: #E5BB7A;
+    box-shadow: 2px 2px 2px 0;
 }
-
-.btn-buy {
-    box-sizing: border-box;
-    border: 2px solid #000;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 36px;
-    padding: 8px 24px;
-    background-color: #E88847;
-    display: flex;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.btn-buy:hover {
-    background: #ffa96f;
-    box-shadow: 3px 3px 4px 0px #AA4500
-}
-
-.btn-buy img {
-    width: 44px;
-    vertical-align: top;
-}
-
-.number-choice {
-    font-size: 18px;
-}
-.btn-number-choice {
-    box-sizing: border-box;
-    width: 90px;
-    height: 40px;
-    border: 2px solid #000;
-    font-size: 18px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.btn-delete {
-    box-sizing: border-box;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #6e6e6e;
+.btn-next-news , .btn-previous-news{
+    padding: 0;
+    border: none;
     background-color: #00f0;
-    color: #6e6e6e;
-    display: flex;
-    align-items: center;
+    height: fit-content;
 }
-
-.btn-delete img {
-    width: 100%;
-    vertical-align: top;
-}
-
-.discount-code {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: top;
-}
-
-.discount-input-area {
+.news-item-switcher .arrow-cirle{
+    position: relative;
     box-sizing: border-box;
-    margin-left: auto;
-    width: fit-content;
-    padding: 15px 5px;
-    text-align: left;
-    font-size: 18px;
-    color: #000;
+    padding: 19px;
     border: 1px solid #6e6e6e;
-    border-radius: 0;
+    border-radius: 50%;
 }
 
-.btn-discount {
-    box-sizing: border-box;
-    margin-right: auto;
-    padding: 15px 10px;
-    font-size: 16px;
-    background-color: #E88847;
-    color: #fff;
-    border: 1px solid #6e6e6e;
+.news-item-switcher .arrow-rtl {
+    position: absolute;
+    top: 10px;
+    left: 13px;
+    border: #6e6e6e solid;
+    border-width: 4px 0 0 4px ;
+    width: 0;
+    height: 0;
+    padding: 7px;
+    transform: rotate(-45deg);
+    display: inline-block;
 }
 
-.btn-next{
-    box-sizing: border-box;
-    border: 2px solid #000;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 16px;
-    padding: 15px 10px;
-    background-color: #E88847;
+.news-item-switcher .arrow-ltr {
+    position: absolute;
+    top: 10px;
+    right: 13px;
+    border: #6e6e6e solid;
+    border-width: 0 4px 4px 0;
+    width: 0;
+    height: 0;
+    padding: 7px;
+    transform: rotate(-45deg);
+    display: inline-block;
+}
+
+/* 數量增減器 */
+.numberChoice{
     display: flex;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin: var(--section-gap) auto;
-}
-.btn-next:hover {
-        background: #ffa96f;
-        box-shadow: 3px 3px 4px 0px #AA4500
-}
-.btn-login {
-    box-sizing: border-box;
-    border: 2px solid #000;
-    margin: 20px auto;
-    width: 95%;
-    border-radius: 10px;
-    color: #fff;
     font-size: 16px;
-    padding: 15px 10px;
-    background-color: #E88847;
+    padding: 0;
+    align-items: center;
+}
+.numberChoice label {
     display: flex;
-    overflow: hidden;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-.btn-login:hover {
-    background: #ffa96f;
-    box-shadow: 3px 3px 4px 0px #AA4500
-}
-
-.btn-foget-PW, .btn-join {
     box-sizing: border-box;
-    border: 2px solid #000;
-    width: 45%;
-    border-radius: 10px;
-    margin: auto;
-    color: #000;
-    font-size: 16px;
-    padding: 15px 10px;
+    margin: 0 auto;
+}
+.qty {
+    box-sizing: border-box;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    border: 0;
+    border-top: 1px solid #6e6e6e;
+    border-bottom: 1px solid #6e6e6e;
     background-color: #fff;
 }
-.btn-foget-PW:hover, .btn-join:hover{
-    border-color: #6247E8;
-    color: #6247E8;
-    box-shadow: 3px 3px 4px 0 #1F0699;
+.qtyPlus, .qtyMinus {
+    width: 35px;
+    height: 35px;
+    background-color: #000;
+    color: #fff;
 }
 
+/* 加入購物車 */
+.btn-buy-product{
+    display: flex;
+    align-items: center;
+}
+#addToCart {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    font-size: 24px;
+    position: relative;
+    background-color: #E88847;
+    color: #fff;
+}
+#addToCart:hover {
+    background-color: #FFA96F;
+    box-shadow: 2px 2px 2px 0px #AA4500;
+}
+#addToCart svg {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    top: 5px;
+}
+
+/* 刪除購物車內的物品 */
+.deleteProductInCart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    aspect-ratio: 1/1;
+    background-color: #00f0;
+    border: 1px solid #6e6e6e;
+}
+.deleteProductInCart:hover{
+    box-shadow: 1px 1px 0 #6e6e6e inset;
+}
+.deleteProductInCart svg {
+    width: 100%;
+}
+.deleteProductInCart svg path {
+    fill: #6e6e6e;
+}
+.deleteProductInCart:hover svg path {
+    fill: #000;
+}
+
+
+/* 前往linepay */
+#goLinePay {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    font-size: 24px;
+    position: relative;
+    background-color: #00C34D;
+    color: #fff;
+}
+
+/* 優惠券 */
+.discount-code {
+    display: flex;
+}
+#discountCode {
+    box-sizing: border-box;
+    width: 70%;
+    padding: 10px;
+}
+#btnDiscount {
+    box-sizing: border-box;
+    width: 30%;
+    padding: 10px;
+    background-color: #E88847;
+    color: #fff;
+}
+
+/* 去填付款資料 */
+.go-to-checkout{
+    display: flex;
+    margin: auto;
+}
+#checkout{
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #E88847;
+    margin: auto;
+    color: #fff;
+}

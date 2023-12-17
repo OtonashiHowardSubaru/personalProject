@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Inside Div</title>
+    <style>
+        .parent {
+            height: 100px; /* 初始高度 */
+            transition: height 0.5s ease-out; /* 添加過渡效果 */
+        }
+
+        .parent[style*="height: 0"] button {
+            height: 0;
+            padding: 0;
+            margin: 0;
+        }
+
+        button {
+            height: 30px; /* 初始高度 */
+            transition: height 0.5s ease-out; /* 添加過渡效果 */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <button>Click me</button>
+    </div>
+
+    <script>
+        // 使用 JavaScript 觸發高度變化
+        setTimeout(() => {
+            document.querySelector('.parent').style.height = '0';
+        }, 2000);
+    </script>
+</body>
+</html>

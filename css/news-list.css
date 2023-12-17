@@ -1,67 +1,75 @@
-* {--section-gap: 25px}
-a {
-    text-decoration: none;
-}
-
-.fill-color-block{
-    width: 100%;
-    height: 160px;
+main {
+    padding-top: 60px;
     background-color: #FFF2DB;
 }
-.news-heading {
-    letter-spacing: 0.5em;
+main h1 {
+    width: 100%;
+    font-size: 24px;
     text-align: center;
-    position: relative;
-    padding: 25px;
-    border-bottom: 2px solid #6e6e6e;
+    border-bottom: 1px solid #6e6e6e;
+    margin-top: 50px;
+    margin-bottom: var(--section-gap);
+    margin-left: 10px;
+    margin-right: 10px;
 }
-
-h1 {
-    font-size: 64px;
+main ul {
+    list-style: none;
+    padding-inline-start: 0;
     margin: 0;
 }
-
-.news-list{
-    row-gap: 50px;
+#newsList{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 45px;
 }
-
-.news {
-    background-color: #FFF2DB;
+.news-box{
+    padding: 0 10px;
 }
-.news-item{
+.news-item {
+    height: 100%;
     border: 1px solid #6e6e6e;
     transform: scale(1);
-    transition: 1s;
+    transition: .6s;
 }
 .news-item:hover {
     transform: scale(1.1);
-    transition: 1s;
+    transition: .6s;
 }
-.news-item-img img {
-    width: 100%;
-    height: 210px;
-    vertical-align: top;
-    object-fit: cover;
-    
-}
-
-.news-item-text {
-
+.news-item a{
     display: flex;
     flex-direction: column;
-    margin: var(--column-gap) 5px;
+    height: 100%;
 }
-
-.news-item-title {
-    margin: auto;
+.news-item-img{
+    aspect-ratio: 16/9;
+    overflow: hidden;
 }
-
-.news-item-title h2 {
-    margin: 0;
-    font-size: 24px;
-    font-weight: bold;
+.news-item-img img {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    width: 100%;
 }
-
+.news-item-text {
+    flex-grow: 1;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.news-item-text h3{
+    font-size: 18px;
+}
 .news-item-date {
-    align-self: flex-end;
+    text-align: right;
+    font-size: 16px;
+}
+@media screen and (min-width:1024px) {
+    main {
+        padding-top: 80px;
+    }
+    main h1 {
+        font-size: 36px;
+    }
+    
 }

@@ -2,8 +2,11 @@
 
 *{
     font-family: 'Source Sans 3', 'Noto Sans TC', sans-serif;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     line-height: 1.7;
+}
+@media screen and (max-width:320px) {
+  *{letter-spacing: 1px;}
 }
 
 a:link {
@@ -15,3 +18,5 @@ a:link {
     color: black;
     text-decoration: none;
   }
+  
+* {--section-gap: 25px}

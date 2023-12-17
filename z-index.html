@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .parent {
+      position: relative;
+      z-index: 2;
+      background-color: orange;
+      width: 100px;
+      height: 100px;
+    }
+  
+    .child {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      z-index: -1;
+    }
+    .grandchild1 {
+        position: absolute;
+        top: -10px;
+        width: 40px;
+        height: 20px;
+        background-color: blue;
+        z-index: -2;
+    }
+    .child2 {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background-color: green;
+        z-index: 0;
+    }
+    .grandchild2 {
+        position: relative;
+        left: 10px;
+        width: 20px;
+        height: 20px;
+        background-color: violet;
+        z-index: -1;
+    }
+  </style>
+</head>
+<body>
+<!--
+z-index補充1，表兄弟層、樓中樓
+假設有b1區 b2區，各自內部有r1 r2區
+b1 z-index 2
+b2 z-index ?
+r2 z-index 3
+
+如果?=0 那r2會蓋過b1
+但如果?=1，那r2則不能蓋過b1
+大概就是1樓裡面的2樓也蓋不過2樓
+
+z-index補充2，中間層有無斷層
+有一組祖孫三層的div，a=祖層 b=親層 c=子層,分別z-index對應 2 無設定 -1 且三層都有定位
+(這邊b層也可以是 有設定z-index但沒有設定位，由於無設定定位z-index就會無效=>沒有設定)
+<div class="a" z-index:2>
+	<div class="b">
+		<div class="c" z-index:-1></div>
+	</div>
+</div>
+由於b層(中間層)無設定，a層的z-inde>c層的z-index就可以直接蓋過去
+相對的
+如果b層(中間層)有設定position(不一定要設定z-index)，a層z-index再大都壓不過c層
+ -->
+  
+  <div class="parent">
+        <!-- <div class="child"> -->
+          <!-- <div class="grandchild1"></div> -->
+        <!-- </div> -->
+        <div class="child2">
+          <div class="grandchild2">
+          </div>
+        </div>
+  </div>
+</body>
+</html>

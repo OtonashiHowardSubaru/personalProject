@@ -1,0 +1,116 @@
+.banner {
+    height: 300px;
+    background: url(/imgs/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.slogan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    padding-top: 60px;
+}
+[class*="slogan-"] {
+    color: #fff;
+    font-size: clamp(1.25rem, 5vw, 2.25rem);
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+    position: relative;
+    padding: 10px 0;
+}
+.slogan-partA {text-align: left;}
+.slogan-partB {text-align: left;}
+.slogan-partC {text-align: left; font-size: 0;}
+.calico-span1 { font-size: clamp(1.25rem, 5vw, 2.25rem); color: #FFB84F;}
+.calico-span2 { font-size: clamp(1.25rem, 5vw, 2.25rem); }
+.calico-span3 { font-size: clamp(1.25rem, 5vw, 2.25rem); color: #664008;}
+main {
+    background-color: #FFF2DB;
+}
+.newProducts {
+    background-color: #FFF2DB;
+}
+.new-products, .hot-preoders{
+    padding: 0 10px;
+}
+section h2{
+    width: 100%;
+    text-align: center;
+    margin: var(--section-gap) 0;
+}
+.product-card:nth-of-type(3), .product-card:nth-of-type(4) {
+    display: none;
+}
+@media screen and (min-width:1024px) {
+    .product-card:nth-of-type(3), .product-card:nth-of-type(4) {
+    display: block;
+}
+}
+.news-item-switcher{
+    display: flex;
+    flex-grow: 1;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+#newsBoard{
+    overflow: hidden;
+    padding: 0;
+}
+#newsList{     /*ul*/
+    margin: 0;
+    list-style: none;
+    border: 1px solid #6e6e6e;
+    padding: 0 0 10px 0;
+    position: relative;
+}
+.news-item{     /*li*/
+    float: left;
+}
+.news-item-img {
+    aspect-ratio: 16/9;
+    overflow: hidden;
+}
+.news-item-img img {
+    width: 100%;
+    vertical-align: top;
+    object-fit: cover;
+}
+.news-item-text h3{
+    font-size: 16px;
+    margin: 10px 0 0 0;
+}
+.news-item-date {
+    text-align: right;
+}      
+@media screen and (min-width:1024px) {
+    .slogan{
+        padding-left: 16.666%;
+    }
+    .news-item-switcher {display: none;}
+    #newsList{ 
+        display: flex;
+        max-width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+        gap: var(--section-gap);
+        border: none;
+        position: static;
+    }
+    .news-item{ 
+        max-width: 40%;
+        border: 1px solid #6e6e6e;
+    }
+    main h2 {
+        font-size: 36px;
+    }
+}

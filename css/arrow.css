@@ -18,3 +18,23 @@
     display: inline-block;
 }
 
+.arrow-ttd{
+    border: #6e6e6e solid;
+    border-width: 0 3px 3px 0;
+    width: 0;
+    height: 0;
+    padding: 6px;
+    transform: rotate(45deg);
+    display: inline-block;
+}
+
+.arrow-dtt{
+    border: #6e6e6e solid;
+    border-width: 3px 0 0 3px ;
+    width: 0;
+    height: 0;
+    padding: 6px;
+    transform: rotate(45deg);
+    display: inline-block;
+}
+

@@ -1,65 +1,64 @@
-        footer {
-            padding-top: 200px;
+        footer{
             background-color: #FFF2DB;
+            padding-top: 50px;
+        }
+        .footer-content {
+            border-top: 3px solid #000;
+        }
+        footer .accordion {
+            font-size: 16px;
+            position: relative;
+            padding: 12px 20px;
+            border-bottom: 1px solid #6e6e6e;
+            cursor: pointer;
+        }
+        footer .arrow-ttd{
+            position: absolute;
+            right: 20px;
+            transition: transform 0.4s ease;
+        }
+        footer .arrow-ttd-rotated{
+            top: 19px;
+            transform: rotate(225deg)
         }
 
-        footer .container {
-            max-width: 100%;
+        footer h3, footer p{
+            margin: 0;
+            font-size: 16px;
         }
-
-        footer .row {
-            height: 380px;
-            border: 3px solid #6E6E6E;
-            border-radius: 150px 150px 0 0;
-            border-bottom: none;
-            background-color: #FFFBF5;
-        }
-
-        footer .col-xl-3 {
+        .social-links-panel, .bottom-links-panel {
+            margin: 0;
+            padding-inline-start: 0;
+            list-style: none;
             display: flex;
             flex-wrap: wrap;
-            align-content: center;
-            justify-content: center;
+            justify-content: space-around;
+        }
+        .bottom-links-panel a{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 100%;
+        }
+        .bottom-links-panel a:hover{
+            color: #FFA96F;
+        }
+        footer li svg{
+            width: 45px;
+        }
+        footer .panel {
+            border-bottom: 1px solid #6e6e6e;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;;
+            padding: 0 10px;
         }
 
-        footer .col-xl-3 img {
-            max-width: 66.6666%;
-
-        }
-
-        footer .col-xl-5 {
-            height: 75%;
-            border-left: 1px solid #6E6E6E;
-            align-self: center;
-        }
-
-        footer [class*="info-"] > *{
-            margin: 0;
-        }
-        .info-title {
-            margin-top: 0;
-            margin-bottom: 20px;
-        }
-
-        footer .information {
-            display: flex;
-            flex-direction: column;
-        }
-
-        footer .col-xl-4 {
-            height: 75%;
-            align-self: center;
-        }
-        .social-icons {
-            display: flex;
-            justify-content: space-evenly;
-        }
-
-        .social-icons a {
-            height: fit-content;
-            width: fit-content;
-        }
-
-        footer h2 {
-            font-size: 32px;
+        @media screen and (min-width:1024px) {
+            footer .accordion{ cursor: default;}
+            footer .panel {
+                border: none;
+                max-height: fit-content;
+                padding: 10px;
+            }
+            footer .arrow-ttd {display: none;}
         }
