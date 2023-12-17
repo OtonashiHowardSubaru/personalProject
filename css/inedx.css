@@ -1,6 +1,6 @@
 .banner {
     height: 300px;
-    background: url(/imgs/banner.jpg);
+    background: url(imgs/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
